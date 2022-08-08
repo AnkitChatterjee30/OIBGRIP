@@ -270,3 +270,6 @@ tr {
     color: darkblue;
     cursor: pointer;
 }
+.dark-mode .cvb a{
+color:azure;
+}
