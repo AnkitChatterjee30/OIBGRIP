@@ -5,15 +5,322 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Tribute_Page.css">
     <script src="Tribute_Page.js"></script>
     <title>Statistics</title>
 </head>
+<style>
+    .Header {
+        font-size: 65px;
+        margin-top: 40px;
+        margin-left: 300px;
+        font-weight: 600;
+    }
+
+    .run {
+        font-size: 50px;
+        margin-top: 40px;
+        margin-left: 15px;
+        font-family: 'Lora', serif;
+    }
+
+    .first {
+        width: 630px;
+        margin-left: 370px;
+        height: 400px;
+    }
+
+    .para {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: 'Times New Roman';
+        font-size: 22px;
+    }
+
+    .IPL a {
+        color: black;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .IPL a:hover {
+        cursor: pointer;
+    }
+
+    .IPLimg {
+        width: 600px;
+        height: 370px;
+        margin-left: 360px;
+    }
+
+    .Ip {
+        width: 600px;
+        margin-top: 50px;
+        height: 350px;
+        margin-left: 320px;
+    }
+
+    .IUo {
+        margin-left: 1000px;
+        margin-top: 40px;
+        font-size: 45px;
+        position: absolute;
+    }
+
+    .world a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .worldcup {
+        width: 500px;
+        height: 520px;
+        margin-left: 360px;
+    }
+
+    .succ a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .captain a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+
+    }
+
+    .cap {
+        width: 500px;
+        height: 400px;
+        margin-left: 350px;
+    }
+
+    .debut {
+        width: 500px;
+        height: 600px;
+        margin-left: 350px;
+    }
+
+    .stat a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .stater {
+        width: 500px;
+        height: 380px;
+        margin-left: 350px;
+    }
+
+    .ert {
+        width: 600px;
+        height: 380px;
+        margin-left: 350px;
+    }
+
+    .award a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .aww {
+        width: 540px;
+        height: 500px;
+        margin-left: 360px;
+    }
+
+    .inter {
+        font-size: 40px;
+    }
+
+    .yui {
+        width: 540px;
+        height: 340px;
+        margin-left: 360px;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .bat {
+        width: 30px;
+        height: 25px;
+    }
+
+    .dark-mode a {
+        color: white;
+    }
+
+    .aliq {
+        width: 500px;
+        height: 300px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .opi {
+        margin-left: 100px;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .Statbat {
+        border: 1px solid black;
+        font-size: 30px;
+        width: 1500px;
+        height: 800px;
+        margin-top: 150px;
+    }
+
+    th,
+    td {
+        border: black solid 1px;
+    }
+
+    .dark-mode th {
+        color: black;
+    }
+
+    .dark-mode td,
+    th {
+        border: azure 1px solid;
+    }
+
+    .dark-mode .ghj {
+        color: black;
+    }
+
+    .tushu {
+        width: 500px;
+        height: 350px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .worldfty {
+        width: 500px;
+        height: 350px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .capstat {
+        border: 1px solid black;
+        width: 1500px;
+        height: 500px;
+        font-size: 40px;
+
+    }
+
+    .capstat td,
+    tr {
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .uiok {
+        font-size: 45px;
+    }
+
+    .capstat th {
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .dark-mode .capstat td,
+    tr {
+        border: 1px white solid;
+    }
+
+    .dark-mode .capstat {
+        border: 1px white solid;
+    }
+
+    .dark-mode .capstat th {
+        color: black;
+        border: 1px solid white;
+    }
+
+    .dark-mode .asd {
+        color: black;
+    }
+
+    .qwe {
+        font-size: 24px;
+    }
+
+    .miu {
+        font-size: 36px;
+    }
+
+    .wsd {
+        width: 800px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 360px;
+    }
+
+    .arjun {
+        width: 600px;
+        height: 400px;
+        margin-left: 340px;
+    }
+
+    .cvb {
+        font-size: 35px;
+    }
+
+    .cvb a {
+        color: black;
+    }
+
+    .cvb a:hover {
+        color: darkblue;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:600px) {
+        .opi {
+            margin-left: 50px;
+            font-size: 30px;
+            width: 300px;
+        }
+
+        .aliq {
+            width: 250px;
+            height: 150px;
+            margin-left: 30px;
+            margin-top: 50px;
+
+        }
+
+        .tushu {
+            width: 270px;
+            height: 180px;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+
+        .Statbat {
+            border: 1px solid black;
+            font-size: 10px;
+            width: 320px;
+            height: 160px;
+            margin-top: 150px;
+        }
+
+    }
+</style>
 
 <body>
     <button onclick="myFunction()" class="bat">🏏</button>
-    <img src="Virat9.webp"
-        class="aliq" alt="">
+    <img src="Virat9.webp" class="aliq" alt="">
     <h2 class="opi">Virat-The Batsman</h2>
     <table class="Statbat">
         <tr>
@@ -113,8 +420,8 @@
     <br>
     <br>
     <br>
-    <h2 style="font-size: 40px;">Virat-as a Bowler</h2>
     <img src="Virat10.jpg" class="tushu" alt="">
+    <h2 class="opi">Virat-as a Bowler</h2>
     <table class="Statbat">
         <tr>
             <th style="background-color:cadetblue ;"></th>
