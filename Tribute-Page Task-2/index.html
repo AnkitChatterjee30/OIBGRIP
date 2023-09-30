@@ -10,16 +10,386 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="Tribute_Page.css">
     <script src="Tribute_Page.js"></script>
     <title>Tribute Page</title>
 </head>
+<style>
+    .Header {
+        font-size: 65px;
+        margin-top: 40px;
+        margin-left: 300px;
+        font-weight: 600;
+    }
+
+    .run {
+        font-size: 50px;
+        margin-top: 40px;
+        margin-left: 15px;
+        font-family: 'Lora', serif;
+    }
+
+    .first {
+        width: 630px;
+        margin-left: 370px;
+        height: 400px;
+    }
+
+    .para {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: 'Times New Roman';
+        font-size: 22px;
+    }
+
+    .IPL a {
+        color: black;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .IPL a:hover {
+        cursor: pointer;
+    }
+
+    .IPLimg {
+        width: 600px;
+        height: 370px;
+        margin-left: 360px;
+    }
+
+    .Ip {
+        width: 600px;
+        margin-top: 50px;
+        height: 350px;
+        margin-left: 320px;
+    }
+
+    .IUo {
+        margin-left: 1000px;
+        margin-top: 40px;
+        font-size: 45px;
+        position: absolute;
+    }
+
+    .world a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .worldcup {
+        width: 500px;
+        height: 520px;
+        margin-left: 360px;
+    }
+
+    .succ a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .captain a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+
+    }
+
+    .cap {
+        width: 500px;
+        height: 400px;
+        margin-left: 350px;
+    }
+
+    .debut {
+        width: 500px;
+        height: 600px;
+        margin-left: 350px;
+    }
+
+    .stat a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .stater {
+        width: 500px;
+        height: 380px;
+        margin-left: 350px;
+    }
+
+    .ert {
+        width: 600px;
+        height: 380px;
+        margin-left: 350px;
+    }
+
+    .award a {
+        margin-left: 50px;
+        color: black;
+        font-size: 40px;
+    }
+
+    .aww {
+        width: 540px;
+        height: 500px;
+        margin-left: 360px;
+    }
+
+    .inter {
+        font-size: 40px;
+    }
+
+    .yui {
+        width: 540px;
+        height: 340px;
+        margin-left: 360px;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .bat {
+        width: 30px;
+        height: 25px;
+    }
+
+    .dark-mode a {
+        color: white;
+    }
+
+    .aliq {
+        width: 500px;
+        height: 300px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .opi {
+        margin-left: 100px;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .Statbat {
+        border: 1px solid black;
+        font-size: 30px;
+        width: 1500px;
+        height: 800px;
+        margin-top: 150px;
+    }
+
+    th,
+    td {
+        border: black solid 1px;
+    }
+
+    .dark-mode th {
+        color: black;
+    }
+
+    .dark-mode td,
+    th {
+        border: azure 1px solid;
+    }
+
+    .dark-mode .ghj {
+        color: black;
+    }
+
+    .tushu {
+        width: 500px;
+        height: 350px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .worldfty {
+        width: 500px;
+        height: 350px;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+
+    .capstat {
+        border: 1px solid black;
+        width: 1500px;
+        height: 500px;
+        font-size: 40px;
+
+    }
+
+    .capstat td,
+    tr {
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .uiok {
+        font-size: 45px;
+    }
+
+    .capstat th {
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .dark-mode .capstat td,
+    tr {
+        border: 1px white solid;
+    }
+
+    .dark-mode .capstat {
+        border: 1px white solid;
+    }
+
+    .dark-mode .capstat th {
+        color: black;
+        border: 1px solid white;
+    }
+
+    .dark-mode .asd {
+        color: black;
+    }
+
+    .qwe {
+        font-size: 24px;
+    }
+
+    .miu {
+        font-size: 36px;
+    }
+
+    .wsd {
+        width: 800px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 360px;
+    }
+
+    .arjun {
+        width: 600px;
+        height: 400px;
+        margin-left: 340px;
+    }
+
+    .cvb {
+        font-size: 35px;
+    }
+
+    .cvb a {
+        color: black;
+    }
+     .dark-mode .cvb a{
+        color: white;
+    }
+
+    .cvb a:hover {
+        color: darkblue;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width :600px) {
+
+        .Header,
+        .run {
+            margin-left: 20px;
+            font-size: 30px;
+            width: 300px;
+        }
+
+        .first {
+            margin-left: 15px;
+            width: 290px;
+            height: 180px;
+        }
+
+        .succ a {
+            margin-left: 50px;
+            font-size: 23px;
+        }
+
+        .debut {
+            width: 250px;
+            height: 300px;
+            margin-left: 20px;
+        }
+
+        .stat a {
+            margin-left: 50px;
+            font-size: 23px;
+        }
+
+        .stater {
+            width: 270px;
+            height: 200px;
+            margin-left: 30px;
+        }
+
+        .IPL a {
+            font-size: 23px;
+            margin-left: 50px;
+        }
+
+        .IPLimg {
+            width: 280px;
+            height: 180px;
+            margin-left: 30px;
+        }
+
+        .world a {
+            margin-left: 30px;
+            font-size: 23px;
+        }
+
+        .worldcup {
+            width: 250px;
+            height: 260px;
+            margin-left: 30px;
+        }
+
+        .captain a {
+            margin-left: 50px;
+            font-size: 23px;
+
+        }
+
+        .cap {
+            width: 250px;
+            height: 200px;
+            margin-left: 30px;
+        }
+
+        .award a {
+            margin-left: 50px;
+            font-size: 23px;
+        }
+
+        .aww {
+            width: 270px;
+            height: 250px;
+            margin-left: 30px;
+        }
+
+        .cvb {
+            font-size: 25px;
+        }
+       
+        .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    }
+</style>
 
 <body>
     <button onclick="myFunction()" class="bat">🏏</button>
     <h1 class="Header">Virat Kohli-<span class="run">The Run Machine</span></h1>
-    <img src="Virat1.jpg"
-        class="first" alt="">
+    <img src="Virat1.jpg" class="first" alt="">
     <p class="para">Virat Kohli was born on 5th November, 1988. He is an Indian international cricketer
         and former captain of the India national cricket team. He plays for Delhi in domestic cricket and Royal
         Challengers Bangalore in the Indian Premier League as a right-handed batsman. He is often considered one of the
@@ -62,8 +432,7 @@
     <br>
     <br>
     <h2 class="succ"><a href="Tribute_success.html">Under-19 World Cup, International Debut & Success</a></h2>
-    <img src="Virat2.jpg"
-        class="debut" alt="">
+    <img src="Virat2.jpg" class="debut" alt="">
     <br>
     <br>
     <br>
@@ -105,8 +474,7 @@
     <br>
     <br>
     <h2 class="IPL"><a href="Tribute_IPL.html">IPL over the Years</a></h2>
-    <img src="Virat4.webp"
-        class="IPLimg" alt="">
+    <img src="Virat4.webp" class="IPLimg" alt="">
     <br>
     <br>
     <br>
@@ -142,8 +510,7 @@
     <br>
     <br>
     <h2 class="captain"><a href="Tribute_Captain.html">Virat-The Captain</a></h2>
-    <img src="Virat6.webp" class="cap"
-        alt="">
+    <img src="Virat6.webp" class="cap" alt="">
     <br>
     <br>
     <br>
@@ -161,8 +528,7 @@
     <br>
     <br>
     <h2 class="award"><a href="Tribute_Awards.html">Awards & Achievements</a></h2>
-    <img src="Virat7.jpg" class="aww"
-        alt="">
+    <img src="Virat7.jpg" class="aww" alt="">
     <br>
     <br>
     <br>
